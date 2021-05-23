@@ -1,5 +1,6 @@
 var can, con;
 var dots = [];
+var dots_last = [];
 
 function init() {
     can = document.getElementById("playSpace");
@@ -19,8 +20,10 @@ function init() {
 }
 
 function logic() {
-    dots.forEach(e => {
-        e = add_gravity(e);
+    dots_last = Array.from(dots);
+
+    dots.forEach((e, i) => {
+        e = add_gravity(e, dots_last, i);
 
         e = apply_speed(e);
     });
