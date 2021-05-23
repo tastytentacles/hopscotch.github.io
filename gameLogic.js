@@ -9,8 +9,8 @@ function init() {
         dots.push([
             Math.random() * 256 + 128,    // x pos
             Math.random() * 256 + 128,    // y pos
-            Math.random() * 12 - 6, // x speed
-            Math.random() * 12 - 6  // y speed
+            Math.random() * 12 - 6,       // x speed
+            Math.random() * 12 - 6        // y speed
         ]);
     }
 

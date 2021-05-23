@@ -13,3 +13,7 @@ function apply_speed(e) {
 
     return e
 }
+
+function normalize(e) {
+    
+}
