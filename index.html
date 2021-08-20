@@ -2,34 +2,77 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work in Progress</title>
-
-    <script src="physFuncs.js"></script>
-    <script src="gameLogic.js"></script>
+    <meta name="viewport" content="width=1080, initial-scale=1.0">
 
     <style>
         body {
-            background: #0f0f0f;
-        }
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0px;
 
-        p {
+            background-color: black;
             color: white;
-            text-align: center;
-
-            font: 32px monospace;
         }
 
-        canvas {
-            outline: white;
-            outline-style: solid;
-            outline-width: 2px;
+        /* div {
+            border-color: hotpink;
+            border-width: 1px;
+            border-style: solid;
+        } */
+
+        div.top_spacer {
+            min-height: 25vh;
+        }
+
+        div.bottom_spacer {
+            min-height: 50vh;
+        }
+
+        div.side_bar {
+            margin: 0px;
+            padding: 8px;
+            position: absolute;
+            top: 100vh;
+            left: 75vw;
+            width: 20vw;
+        }
+
+        h1.face {
+            font-size: 160px;
+            margin: 0px;
+            text-align: center;
+            white-space: nowrap;
+
+            /* border: blue;
+            border-width: 1px;
+            border-style: solid; */
+        }
+
+        h1.name {
+            font-size: 80px;
+            margin: 0px;
+            text-align: center;
+            white-space: nowrap;
+
+            color: yellow;
+            text-decoration: overline;
+
+            /* border: green;
+            border-width: 1px;
+            border-style: solid; */
         }
     </style>
-</head>
-<body onload="init();">
-    <p>Hello World!</p>
 
-    <canvas id="playSpace" width="512" height="512" style="margin-left: auto;margin-right: auto;display: block;"></canvas>
+    <title>Document</title>
+</head>
+<body>
+    <div style="width: 75vw;">
+        <div class="top_spacer"></div>
+        <h1 class="face">★ (• ε •)</h1>
+        <h1 class="name">This is a Website</h1>
+        <div class="bottom_spacer"></div>
+    </div>
+    <div class="side_bar">
+        <p style="margin: 0px;">this is text, its hidden for right now but I am just going to keep adding more untill it wraps</p>
+    </div>
 </body>
 </html>
